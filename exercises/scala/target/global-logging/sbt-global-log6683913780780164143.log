@@ -1,0 +1,93 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.5 (Private Build Java 1.8.0_282)
+[debug]       Load.loadUnit: plugins took 147.945254ms
+[debug]       Load.loadUnit: defsScala took 0.546333ms
+[debug] [Loading] Scanning directory /home/bahwan/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/bahwan/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 138.741872 ms
+[debug]           Load.resolveProject(global-plugins) took 58.977928ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /home/bahwan/.sbt/1.0/plugins, plugins: List(<none>))) took 243.673352ms
+[debug] [Loading] Done in /home/bahwan/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 276.770428ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.325047ms
+[debug]     Load.loadUnit(file:/home/bahwan/.sbt/1.0/plugins/, ...) took 435.727326ms
+[debug]   Load.apply: load took 622.585016ms
+[debug]   Load.apply: resolveProjects took 6.429003ms
+[debug]   Load.apply: finalTransforms took 83.518118ms
+[debug]   Load.apply: config.delegates took 10.621935ms
+[debug]   Load.apply: Def.make(settings)... took 430.714033ms
+[debug]   Load.apply: structureIndex took 152.136407ms
+[debug]   Load.apply: mkStreams took 2.390434ms
+[info] loading global plugins from /home/bahwan/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 4695.68559ms
+[debug]           Load.loadUnit: plugins took 9.820361ms
+[debug]           Load.loadUnit: defsScala took 0.002134ms
+[debug] [Loading] Scanning directory /home/bahwan/code/cluster-sharding/exercises/scala/project
+[debug]             Load.loadUnit: mkEval took 6.896837ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/bahwan/code/cluster-sharding/exercises/scala/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.4649 ms
+[info] loading settings for project scala-build from lightbend.sbt,plugins.sbt ...
+[debug]               Load.resolveProject(scala-build) took 2.36293ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id scala-build, base: /home/bahwan/code/cluster-sharding/exercises/scala/project, plugins: List(<none>))) took 4.303492ms
+[debug] [Loading] Done in /home/bahwan/code/cluster-sharding/exercises/scala/project, returning: (scala-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 3054.697116ms
+[debug]           Load.loadUnit: cleanEvalClasses took 3.518381ms
+[debug]         Load.loadUnit(file:/home/bahwan/code/cluster-sharding/exercises/scala/project/, ...) took 3068.659301ms
+[debug]       Load.apply: load took 3069.618502ms
+[debug]       Load.apply: resolveProjects took 0.093032ms
+[debug]       Load.apply: finalTransforms took 7.356305ms
+[debug]       Load.apply: config.delegates took 0.338719ms
+[debug]       Load.apply: Def.make(settings)... took 85.367555ms
+[debug]       Load.apply: structureIndex took 33.550428ms
+[debug]       Load.apply: mkStreams took 0.00286ms
+[info] loading project definition from /home/bahwan/code/cluster-sharding/exercises/scala/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to /home/bahwan/code/cluster-sharding/exercises/scala/project/target/scala-2.12/sbt-1.0/classes ...
+[info] done compiling
+[debug]     Load.loadUnit: plugins took 8375.938771ms
+[debug]     Load.loadUnit: defsScala took 0.003913ms
+[debug] [Loading] Scanning directory /home/bahwan/code/cluster-sharding/exercises/scala
+[debug]       Load.loadUnit: mkEval took 0.142453ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/bahwan/code/cluster-sharding/exercises/scala, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(com.lightbend.cinnamon.sbt.Cinnamon), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging$NoPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.lightbend.cinnamon.sbt.Cinnamon),Set(Atom(com.lightbend.cinnamon.sbt.CinnamonAgentOnly))), Clause(Atom(com.lightbend.cinnamon.sbt.CinnamonAgentOnly),Set(Atom(com.lightbend.sbt.javaagent.JavaAgent))), Clause(Atom(com.lightbend.sbt.javaagent.JavaAgent),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging),Set(Atom(com.lightbend.sbt.javaagent.JavaAgent))), Clause(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging),Set(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging$NoPlugin))), Clause(Atom(Navigation),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(And(Set(Atom(com.lightbend.sbt.javaagent.JavaAgent), Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging$NoPlugin))),Set(Atom(com.lightbend.sbt.javaagent.JavaAgentPackaging))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(Navigation)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,com.lightbend.cinnamon.sbt.Cinnamon,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,com.lightbend.cinnamon.sbt.CinnamonAgentOnly,sbt.plugins.JvmPlugin,com.lightbend.sbt.javaagent.JavaAgent,Navigation,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 4.225943 ms
+[info] loading settings for project scala from build.sbt,lightbend.sbt ...
+[debug]         Load.resolveProject(scala) took 9.397632ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id scala, base: /home/bahwan/code/cluster-sharding/exercises/scala, plugins: List(<none>))) took 17.344015ms
+[debug] [Loading] Done in /home/bahwan/code/cluster-sharding/exercises/scala, returning: (scala)
+[debug]     Load.loadUnit: loadedProjectsRaw took 2696.204598ms
+[debug]     Load.loadUnit: cleanEvalClasses took 2.320591ms
+[debug]   Load.loadUnit(file:/home/bahwan/code/cluster-sharding/exercises/scala/, ...) took 11075.237993ms
+[debug] Load.apply: load took 11076.287721ms
+[debug] Load.apply: resolveProjects took 0.09961ms
+[debug] Load.apply: finalTransforms took 9.175377ms
+[debug] Load.apply: config.delegates took 0.516565ms
+[debug] Load.apply: Def.make(settings)... took 95.272331ms
+[debug] Load.apply: structureIndex took 26.810713ms
+[debug] Load.apply: mkStreams took 0.002276ms
+[info] set current project to orders (in build file:/home/bahwan/code/cluster-sharding/exercises/scala/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///home/bahwan/.sbt/1.0/server/25c06619113ef21c6e0e/sock
+[info] started sbt server
