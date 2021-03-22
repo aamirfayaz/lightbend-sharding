@@ -1,0 +1,96 @@
+[0m[[0m[0mdebug[0m] [0m[0mjavaOptions: Vector()[0m
+[0m[[0m[0mdebug[0m] [0m[0mForking tests - parallelism = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreate a single-thread test executor[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunner for org.scalatest.tools.Framework produced 7 initial tasks for 7 tests.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.reactivebbq.orders.OrderTest, sbt.ForkMain$SubclassFingerscan@c818063, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOrderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mwithItem[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a copy of the Order with the new item when no previous items exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a copy of the Order with the new item appended when previous items exist[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 2 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.reactivebbq.orders.InMemoryOrderRepositoryTest, sbt.ForkMain$SubclassFingerscan@3f0ee7cb, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mInMemoryOrderRepositoryTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mThe repository[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be thread safe[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mfind[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None if the repository is empty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None if the repository is not empty, but the order doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the order if it is the only one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct order when there is more than one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return each correct order when there is more than one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mupdate[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add the order to the repo if it doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should overwrite the order if it already exists[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 8 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.reactivebbq.orders.OrderActorTest, sbt.ForkMain$SubclassFingerscan@75bd9247, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOrderActorTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32midExtractor[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the expected id and message[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mshardIdExtractor[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the expected shard id[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOpenOrder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should initialize the Order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an error if the Order is already opened[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the repository failure if the repository fails[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAddItemToOrder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an OrderNotFoundException if the order hasn't been Opened.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add the item to the order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add multiple items to the order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the repository failure if the repository fails[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGetOrder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an OrderNotFoundException if the order hasn't been Opened.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an open order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an updated order[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 12 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.reactivebbq.orders.OrderIdTest, sbt.ForkMain$SubclassFingerscan@7d417077, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOrderIdTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mapply[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate a unique id each time it is called[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.reactivebbq.orders.JsonContractTest, sbt.ForkMain$SubclassFingerscan@7dc36524, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mJsonContractTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mCreating an Order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Adhere to the Json Contract[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mRetrieving the Order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Adhere to the Json Contract[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAdding to an Order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Adhere to the Json Contract[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 3 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.reactivebbq.orders.SQLOrderRepositoryTest, sbt.ForkMain$SubclassFingerscan@35bbe5e8, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSQLOrderRepositoryTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mThe repository[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be thread safe[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mfind[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None if the repository is empty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None if the repository is not empty, but the order doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the order if it is the only one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct order when there is more than one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return each correct order when there is more than one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mupdate[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add the order to the repo if it doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should overwrite the order if it already exists[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 8 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.reactivebbq.orders.OrderRoutesTest, sbt.ForkMain$SubclassFingerscan@2c8d66b2, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOrderRoutesTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST to /order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create a new order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGET to /order/{id}[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a meaningful error if the order doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST to /order/{id}/items[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add an item to the order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a meaningful error if the order doesn't exist[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 5 events.[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 7 seconds, 46 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 39[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 7, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 39, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.reactivebbq.orders.OrderTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.reactivebbq.orders.InMemoryOrderRepositoryTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.reactivebbq.orders.OrderActorTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.reactivebbq.orders.OrderIdTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.reactivebbq.orders.JsonContractTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.reactivebbq.orders.SQLOrderRepositoryTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.reactivebbq.orders.OrderRoutesTest[0m

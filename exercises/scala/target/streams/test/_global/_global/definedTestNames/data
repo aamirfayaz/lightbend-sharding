@@ -1,0 +1,1 @@
+["com.reactivebbq.orders.OrderTest","com.reactivebbq.orders.InMemoryOrderRepositoryTest","com.reactivebbq.orders.OrderActorTest","com.reactivebbq.orders.OrderIdTest","com.reactivebbq.orders.JsonContractTest","com.reactivebbq.orders.SQLOrderRepositoryTest","com.reactivebbq.orders.OrderRoutesTest"]

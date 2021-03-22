@@ -1,0 +1,9 @@
+#Successful Tests
+#Mon Mar 22 17:30:32 IST 2021
+com.reactivebbq.orders.JsonContractTest=1616414428146
+com.reactivebbq.orders.SQLOrderRepositoryTest=1616414431224
+com.reactivebbq.orders.OrderIdTest=1616414427736
+com.reactivebbq.orders.OrderRoutesTest=1616414431420
+com.reactivebbq.orders.OrderActorTest=1616414427733
+com.reactivebbq.orders.OrderTest=1616414425972
+com.reactivebbq.orders.InMemoryOrderRepositoryTest=1616414426129

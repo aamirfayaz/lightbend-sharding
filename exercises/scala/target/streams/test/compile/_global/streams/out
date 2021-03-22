@@ -1,0 +1,61 @@
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/JsonContractTest.scala:10:47: value props is not a member of object com.reactivebbq.orders.OrderActor[0m
+[0m[[0m[31merror[0m] [0m[0m  val orderActors = system.actorOf(OrderActor.props(orderRepo))[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:50:18: value props is not a member of object com.reactivebbq.orders.OrderActor[0m
+[0m[[0m[31merror[0m] [0m[0m      OrderActor.props(repo),[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:58:31: not found: value Envelope[0m
+[0m[[0m[31merror[0m] [0m[0m      sender.send(orderActor, Envelope(orderId, OpenOrder(server, table)))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:68:31: not found: value Envelope[0m
+[0m[[0m[31merror[0m] [0m[0m      sender.send(orderActor, Envelope(orderId, OpenOrder(server, table)))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:80:31: not found: value Envelope[0m
+[0m[[0m[31merror[0m] [0m[0m      sender.send(orderActor, Envelope(orderId, OpenOrder(server, table)))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:83:31: not found: value Envelope[0m
+[0m[[0m[31merror[0m] [0m[0m      sender.send(orderActor, Envelope(orderId, OpenOrder(server, table)))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:93:31: not found: value Envelope[0m
+[0m[[0m[31merror[0m] [0m[0m      sender.send(orderActor, Envelope(orderId, OpenOrder(server, table)))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:102:31: not found: value Envelope[0m
+[0m[[0m[31merror[0m] [0m[0m      sender.send(orderActor, Envelope(orderId, AddItemToOrder(item)))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:110:31: not found: value Envelope[0m
+[0m[[0m[31merror[0m] [0m[0m      sender.send(orderActor, Envelope(orderId, AddItemToOrder(item)))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:122:35: not found: value Envelope[0m
+[0m[[0m[31merror[0m] [0m[0m          sender.send(orderActor, Envelope(orderId, AddItemToOrder(item)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:136:31: not found: value Envelope[0m
+[0m[[0m[31merror[0m] [0m[0m      sender.send(orderActor, Envelope(orderId, AddItemToOrder(item)))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:143:31: not found: value Envelope[0m
+[0m[[0m[31merror[0m] [0m[0m      sender.send(orderActor, Envelope(orderId, GetOrder()))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:149:31: not found: value Envelope[0m
+[0m[[0m[31merror[0m] [0m[0m      sender.send(orderActor, Envelope(orderId, GetOrder()))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:156:31: not found: value Envelope[0m
+[0m[[0m[31merror[0m] [0m[0m      sender.send(orderActor, Envelope(orderId, AddItemToOrder(item)))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderActorTest.scala:159:31: not found: value Envelope[0m
+[0m[[0m[31merror[0m] [0m[0m      sender.send(orderActor, Envelope(orderId, GetOrder()))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderRoutesTest.scala:33:25: value Envelope is not a member of object com.reactivebbq.orders.OrderActor[0m
+[0m[[0m[31merror[0m] [0m[0m        case OrderActor.Envelope(_, OrderActor.OpenOrder(server, stable)) =>[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderRoutesTest.scala:56:35: value Envelope is not a member of object com.reactivebbq.orders.OrderActor[0m
+[0m[[0m[31merror[0m] [0m[0m      orders.expectMsg(OrderActor.Envelope(order.id, OrderActor.GetOrder()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderRoutesTest.scala:73:35: value Envelope is not a member of object com.reactivebbq.orders.OrderActor[0m
+[0m[[0m[31merror[0m] [0m[0m      orders.expectMsg(OrderActor.Envelope(orderId, OrderActor.GetOrder()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderRoutesTest.scala:95:35: value Envelope is not a member of object com.reactivebbq.orders.OrderActor[0m
+[0m[[0m[31merror[0m] [0m[0m      orders.expectMsg(OrderActor.Envelope(order.id, request))[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/bahwan/code/cluster-sharding/exercises/scala/src/test/scala/com/reactivebbq/orders/OrderRoutesTest.scala:116:35: value Envelope is not a member of object com.reactivebbq.orders.OrderActor[0m
+[0m[[0m[31merror[0m] [0m[0m      orders.expectMsg(OrderActor.Envelope(orderId, request))[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m20 errors found[0m

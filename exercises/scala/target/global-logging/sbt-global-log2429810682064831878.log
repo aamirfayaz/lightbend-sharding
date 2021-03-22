@@ -1,0 +1,74 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(2d945e56-bf5b-49fb-9d02-aa398799aced), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/bahwan/code/cluster-sharding/exercises/scala/target/scala-2.13/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOrderTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mwithItem[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a copy of the Order with the new item when no previous items exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a copy of the Order with the new item appended when previous items exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mInMemoryOrderRepositoryTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mThe repository[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be thread safe[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mfind[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None if the repository is empty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None if the repository is not empty, but the order doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the order if it is the only one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct order when there is more than one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return each correct order when there is more than one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mupdate[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add the order to the repo if it doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should overwrite the order if it already exists[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOrderActorTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOpenOrder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should initialize the Order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an error if the Order is already opened[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the repository failure if the repository fails[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAddItemToOrder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an OrderNotFoundException if the order hasn't been Opened.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add the item to the order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add multiple items to the order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the repository failure if the repository fails[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGetOrder[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an OrderNotFoundException if the order hasn't been Opened.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an open order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an updated order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOrderIdTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mapply[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should generate a unique id each time it is called[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mJsonContractTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mCreating an Order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Adhere to the Json Contract[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mRetrieving the Order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Adhere to the Json Contract[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAdding to an Order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Adhere to the Json Contract[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSQLOrderRepositoryTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mThe repository[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be thread safe[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mfind[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None if the repository is empty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return None if the repository is not empty, but the order doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the order if it is the only one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct order when there is more than one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return each correct order when there is more than one in the repo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mupdate[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add the order to the repo if it doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should overwrite the order if it already exists[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mOrderRoutesTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST to /order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create a new order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGET to /order/{id}[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a meaningful error if the order doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST to /order/{id}/items[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add an item to the order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a meaningful error if the order doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 5 seconds, 777 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 37[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 7, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 37, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 7 s, completed 22 Mar, 2021 1:49:52 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

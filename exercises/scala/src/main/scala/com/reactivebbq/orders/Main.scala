@@ -1,8 +1,10 @@
 package com.reactivebbq.orders
 
-import akka.actor.ActorSystem
+import akka.actor.{ActorRef, ActorSystem}
+import akka.cluster.sharding.{ClusterSharding, ClusterShardingSettings}
 import akka.http.scaladsl.Http
 import akka.management.scaladsl.AkkaManagement
+import akka.routing.RoundRobinPool
 import org.slf4j.LoggerFactory
 
 object Main extends App {
@@ -22,7 +24,15 @@ object Main extends App {
   val blockingDispatcher = system.dispatchers.lookup("blocking-dispatcher")
   val orderRepository: OrderRepository = new SQLOrderRepository()(blockingDispatcher)
 
-  val orders = system.deadLetters
+  // val orders: ActorRef = system.actorOf(RoundRobinPool(100).props(OrderActor.props(orderRepository)))
+  //Now, Cluster Sharding
+  val orders = ClusterSharding(system).start(
+    typeName = "orders",
+    entityProps = OrderActor.props(orderRepository),
+    settings = ClusterShardingSettings(system),
+    extractEntityId = OrderActor.entityIdExtractor,
+    extractShardId = OrderActor.shardIdExtractor
+  )
 
   val orderRoutes = new OrderRoutes(orders)(system.dispatcher)
 
