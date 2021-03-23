@@ -86,7 +86,7 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should add an item to the order[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return a meaningful error if the order doesn't exist[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 5 events.[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 6 seconds, 427 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 12 seconds, 690 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 43[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 7, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 43, failed 0, canceled 0, ignored 0, pending 0[0m[0m
