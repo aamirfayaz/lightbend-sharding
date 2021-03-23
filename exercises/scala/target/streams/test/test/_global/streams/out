@@ -28,20 +28,25 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return the expected id and message[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mshardIdExtractor[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return the expected shard id[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mThe Actor[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Load it's state from the repository when created.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Terminate when it fails to load from the repo[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mOpenOrder[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should initialize the Order[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return an error if the Order is already opened[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return the repository failure if the repository fails[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the repository failure if the repository fails and fail[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should not allow further interactions while it's in progress[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAddItemToOrder[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return an OrderNotFoundException if the order hasn't been Opened.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should add the item to the order[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should add multiple items to the order[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return the repository failure if the repository fails[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the repository failure if the repository fails and fail[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should not allow further interactions while it's in progress[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mGetOrder[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return an OrderNotFoundException if the order hasn't been Opened.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return an open order[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return an updated order[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 12 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 16 events.[0m
 [0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(com.reactivebbq.orders.OrderIdTest, sbt.ForkMain$SubclassFingerscan@7d417077, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mOrderIdTest:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mapply[0m[0m
@@ -81,10 +86,10 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should add an item to the order[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return a meaningful error if the order doesn't exist[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 5 events.[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 7 seconds, 46 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 39[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 6 seconds, 427 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 43[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 7, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 39, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 43, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com.reactivebbq.orders.OrderTest[0m

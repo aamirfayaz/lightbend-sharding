@@ -1,0 +1,7 @@
+--> Nothing happens to the stash until the restart is actually attempted.
+    When the restarting process starts, the preRestart() step of the stash calls
+     unstashAll() to return all messages to the mailbox. Therefore messages are
+      not lost, and not kept in the stash, but just unstashed and returned to the
+       mailbox.
+
+--> If your actor is restarted, the contents of the Stash is maintained.
